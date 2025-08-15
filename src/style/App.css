@@ -1,0 +1,298 @@
+*{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+ul{
+  display: flex;
+  text-align:left;
+  padding: 2rem;
+  width: 100vh;
+}
+
+.product-card {
+  border-radius: 8px;
+  background-color: #fff9f9;
+  height: 22rem;
+  overflow: hidden;
+  border: 0.5px solid rgba(150, 150, 150, 0.295);
+  width: min-content;
+}
+
+.ItemList{
+  height: max-content;
+  margin: 3rem 5rem 0 5rem;
+}
+
+.ItemList h4{
+  margin: 3rem 0 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+
+.listPerItem{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.product-card img {
+  width: 270px;
+  height: 170px;
+  margin: 0;
+  border-radius: 2px;
+  margin-bottom: 1%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product-info{
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-info span, h6, h5 {
+  margin: 0.1rem 0;
+}
+
+.product-info span{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.product-info h5{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+
+.product-info h6{
+  color: #0000007e;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 2rem;
+}
+
+.Button button {
+  background-color: #424242; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 2px;
+  margin: 0.5rem 0 1rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Button button:hover{
+  background-color: #0d9900; /* Darker green on hover */
+}
+
+.itemsCont{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Header .header-container .header-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.Header .header-container .header-logo span{
+  color: #000000;
+  margin: 0 1rem 0 0 ;
+  cursor: pointer;
+}
+
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.8rem 5rem;
+  color: rgb(0, 0, 0)  ;
+  border-bottom: solid rgba(148, 148, 148, 0.301) 0.5px;
+  width: 100%;
+  margin: 0;
+}
+
+
+.header-search input{
+  padding: 0.5rem 15rem 0.5rem 0.5rem;
+  border-radius: 3px;
+  border: none;
+  margin-right: 5px;
+}
+
+.header-cart span{
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-cart span:hover{
+  color: #94ff8a;
+  font-size: 1.5rem;
+}
+
+.header-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.header-search span{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+} 
+
+.header-logo span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.Header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid rgba(150, 150, 150, 0.295) 0.5px;
+  width: 100%;
+  margin: 0;
+}
+
+.Header .lower-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding: 0.3rem 1.5rem;
+  border-radius: 50px;
+}
+
+.Header .lower-header p{
+  margin: 0;
+  padding: 0.3rem 2rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #292929;
+  margin: 0 1rem;
+  border: none;
+}
+
+.Header .lower-header p:hover{
+  background-color: #a8a8a8;
+}
+
+.highlight-display{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 5px;
+  height: 88vh;
+}
+
+.highlight-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.highlight-container img{
+  width: 700px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.highlight-text{
+  font-size: 2rem;
+  text-align: left;
+  color: #000000;
+  margin: 0 5rem;
+}
+
+.highlight-text h6{
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: left;
+  margin: 0 0 2rem 0.3rem;
+}
+
+.highlight-text button{
+  background-color: #424242;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.highlight-text button:hover{
+  background-color: #0d9900; /* Darker green on hover */
+}
+
+.buttom-container{
+  height: 22.5vh;
+  display: flex;
+  width: 100%;
+  padding: 2rem 7rem;
+  margin: 7rem 0;;
+  border: solid rgba(150, 150, 150, 0.295) 0.5px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.buttom-container .right-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: left;
+}
+
+.buttom-container .left-container h3{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.buttom-container .left-container h6{
+  font-size: 1rem;
+  font-weight: 300;
+}
